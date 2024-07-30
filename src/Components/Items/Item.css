@@ -1,0 +1,38 @@
+.item{
+    /* width:350px; */
+    height: 15px;
+
+}
+.item p{
+    margin: 10px 0px;
+    /* width: 100px;
+     height: 20px  */
+}
+
+.price{
+    display: flex;
+    gap: 20px;
+}
+.item-new{
+    background-color: #020000;
+    font-size: 20px;
+    font-weight: 600px;
+}
+.item-old{
+    background-color: #000000;
+    font-size: 20px;
+    text-decoration: line-through;
+    font-weight: 500px;
+}
+img{
+    background-attachment: fixed;
+    background-size: cover;
+}
+img:hover{
+    transform:scale(1.1) ;
+    transition: 0.5s;
+}
+#btn{
+    border: 2px solid black;
+    position: relative;
+}
