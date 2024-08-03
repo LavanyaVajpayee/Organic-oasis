@@ -11,18 +11,18 @@ function Bento() {
     <div className='bento-container background-image'>
     <div className='bento-main'>
         <div className='bento-large background-image' style={{ backgroundImage: `url(${milletbento})` }}>
-            <button><a href="#cereal" >Know More</a></button>
+            <button className='bento-button'><a href="#cereal" >Know More</a></button>
         </div>
-        <div className="bento-small background-image"  style={{ backgroundImage: `url(${fruitsbento})` }}><button><a href="#fruits">Know More</a>
+        <div className="bento-small background-image"  style={{ backgroundImage: `url(${fruitsbento})` }}><button className='bento-button'><a href="#fruits">Know More</a>
           </button></div>
-        <div className="bento-small background-image" style={{ backgroundImage: `url(${vegiesbento})` }}><button><a href="#vegies">Know More</a></button></div>
+        <div className="bento-small background-image" style={{ backgroundImage: `url(${vegiesbento})` }}><button className='bento-button'><a href="#vegies">Know More</a></button></div>
         
     </div>
     <div className='bento-main'>
-        <div className="bento-small background-image" style={{ backgroundImage: `url(${frozenbento})` }}><button><a href="#frozen">Know More</a></button></div>
-        <div className="bento-small background-image" style={{ backgroundImage: `url(${dairybento})` }}><button><a href="#dairy">Know More</a></button></div>
+        <div className="bento-small background-image" style={{ backgroundImage: `url(${frozenbento})` }}><button className='bento-button'><a href="#frozen">Know More</a></button></div>
+        <div className="bento-small background-image" style={{ backgroundImage: `url(${dairybento})` }}><button className='bento-button'><a href="#dairy">Know More</a></button></div>
         <div className='bento-large background-image' style={{ backgroundImage: `url(${pulsesbento})` }}>
-            <button><a href="#pulses">Know More</a></button>
+            <button className='bento-button'><a href="#pulses">Know More</a></button>
         </div>
         
     </div>

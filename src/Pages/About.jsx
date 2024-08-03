@@ -1,56 +1,64 @@
-import React from 'react';
-import Footer from '../Components/Footer/Footer';
+import React from "react";
 function Category() {
   return (
-    <div style={{
-      position: 'absolute',
-      top: '20%',
-      height: '500px',
-      width: '600px',
-      left: '30%',
-      padding: '20px', // added padding to create some space between text and border
-    }}>
-      <p style={{
-        fontSize: '1.2rem',
-        color: 'black',
-        marginBottom: '20px', // added margin bottom to create gap between paragraphs
-      }}>
-        Welcome to Organic Oasis, your one-stop destination for 
-        farm-fresh, locally sourced food that brings an authentic 
-        taste right to your table.
-      </p>
-      <p style={{
-        fontSize: '1.2rem',
-        color: 'black',
-        marginBottom: '20px',
-      }}>
-        At Organic Oasis, we pride ourselves on delivering the highest
-         quality products directly from local farms to you. Our commitment to 
-         freshness and quality means you get to enjoy the rich, vibrant flavors 
-         of just-harvested cereals, pulses, fruits, vegetables, frozen foods, 
-         and dairy products.
-      </p>
-      <p style={{
-        fontSize: '1.2rem',
-        color: 'black',
-        marginBottom: '20px',
-      }}>
-        But our mission goes beyond providing premium food; 
-        we're dedicated to supporting local farmers and small businesses. 
-        By choosing Organic Oasis, you're not just making a healthier choice 
-        for yourself, but also empowering local farmers and helping to 
-        strengthen our community.
-      </p>
-      <p style={{
-        fontSize: '1.2rem',
-        color: 'black',
-      }}>
-        Join us in celebrating the true essence of farm-to-table living, 
-        where every bite you take supports a sustainable, thriving local 
-        economy. Experience the Organic Oasis difference today – because 
-        fresh tastes better.
-      </p>
-      <Footer/>
+    <div
+      style={{
+        width: "100%",
+        height: "75vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+      }}
+    >
+      <style>
+        {`
+          @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+DK+Loopet&family=Playwrite+HU:wght@100..400&display=swap');
+        `}
+      </style>
+      <div
+        style={{
+          width: "45%",
+          height: "auto",
+          position: "absolute",
+          left: "26%",
+          top: "50%",
+          transform: "translateY(-50%)",
+          backdropFilter: "blur(2px)",
+          padding: "20px",
+          borderRadius: "10px",
+          boxShadow: "10px 2px 10px rgba(0, 0, 0, 0.1)",
+        }}
+      >
+        <p
+          style={{
+            fontFamily: "cursive",
+            fontSize: "1.2rem",
+            color: "black",
+            marginBottom: "20px",
+            fontFamily: "lato",
+            letterSpacing: "1px",
+          }}
+        >
+          Welcome to Organic Oasis, your one-stop destination for farm-fresh,
+          locally sourced food that brings an authentic taste right to your
+          table. At Organic Oasis, we pride ourselves on delivering the highest
+          quality products directly from local farms to you. Our commitment to
+          freshness and quality means you get to enjoy the rich, vibrant flavors
+          of just-harvested cereals, pulses, fruits, vegetables, frozen foods,
+          and dairy products.
+          <br />
+          But our mission goes beyond providing premium food; we're dedicated to
+          supporting local farmers and small businesses. By choosing Organic
+          Oasis, you're not just making a healthier choice for yourself, but
+          also empowering local farmers and helping to strengthen our community.
+          Join us in celebrating the true essence of farm-to-table living, where
+          every bite you take supports a sustainable, thriving local economy.
+          Experience the Organic Oasis difference today – because fresh tastes
+          better.
+        </p>
+      </div>
     </div>
   );
 }

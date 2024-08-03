@@ -1,5 +1,5 @@
 .bento-container {
-    margin: 40px auto; /* Center the container horizontally*/
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -10,23 +10,27 @@ a{
     color: black;
     text-decoration: none;
 }
-button {
+.bento-button {
     color: black;
     height: 40px;
     width: 120px;
     border-radius: 15px;
     font-size: 1.0rem;
     font-weight: bold;
-    background-color: #E4CFBB;
+    background-color: #dadecfe0;
     position: absolute;
-    bottom: 30px; /* Add this line */
-    right: 15px; /* Add this line */
+    bottom: 30px;
+    right: 15px;
 }
-
+.bento-button:hover{
+    transform: scale(1.1);
+    background-color: #d2dcb6;
+    transition: 0.4s;
+}
 .bento-main {
     height: 300px;
     width: 90vw;
-    min-width: 300px; /* Add a minimum width to prevent the container from getting too narrow*/
+    min-width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,21 +38,19 @@ button {
 }
 
 .bento-large {
-    border: 2px solid black;
-    height: calc(90% - 2px); /* Account for the border when setting the height*/
+    height: calc(90% - 2px);
     width: 48%;
-    position: relative; /* Add this line */
+    position: relative; 
 }
 
 .bento-small {
     width: 22%;
-    border: 2px solid black;
-    height: calc(90% - 2px); /* Account for the border when setting the height*/
-    position: relative; /* Add this line */
+    height: calc(90% - 2px); 
+    position: relative;
 }
 .background-image {
-    background-attachment: fixed;
+    background-origin: center;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 }
